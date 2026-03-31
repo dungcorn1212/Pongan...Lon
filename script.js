@@ -92,7 +92,7 @@ function hideAllSections() {
   // Event listeners for navigation links
   document.getElementById('timeline-link').addEventListener('click', showTimeline);
   document.getElementById('apology-link').addEventListener('click', showApology);
-  document.getElementById('letter-link').addEventListener('click', showLetter);
+  #document.getElementById('letter-link').addEventListener('click', showLetter);
   
   
   // Heart section
