@@ -92,7 +92,7 @@ function hideAllSections() {
   // Event listeners for navigation links
   document.getElementById('timeline-link').addEventListener('click', showTimeline);
   document.getElementById('apology-link').addEventListener('click', showApology);
-  #document.getElementById('letter-link').addEventListener('click', showLetter);
+  document.getElementById('letter-link').addEventListener('click', showLetter);
   
   
   // Heart section
@@ -177,14 +177,10 @@ function hideAllSections() {
     }
   }
   
-  #function showVideo() {
-    #hideAllSections();
-   #videoContainer.style.display = "block";
-  #}
-function showVideo() {
-  hideAllSections();
-  document.getElementById("video-container").style.display = "block";
-}
+  function showVideo() {
+    hideAllSections();
+    videoContainer.style.display = "block";
+  }
   
   function hideAllSections() {
     var sections = document.querySelectorAll('.section');
