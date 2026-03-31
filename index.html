@@ -29,9 +29,9 @@
 
   <nav>
     <ul>
-      <li><a href="#" id="timeline-link">Đôi lời muốn nói</a></li>
-      <li><a href="#" id="apology-link">Đi chơi đeee</a></li>
-      
+      <li><a href="#" id="timeline-link">Timeline</a></li>
+      <li><a href="#" id="apology-link">Apology</a></li>
+      <li><a href="#" id="letter-link">Letter</a></li>
       <li><a href="#" onclick="showVideo()">See Video</a></li>
 
 
@@ -45,12 +45,9 @@
   <section id="timeline-section" class="section">
     <h2>Cho Lợn xin lỗi ạ</h2>
     <div class="moment">
-      <img src="new/pong.jpg"
-        height="350px" width="400px" alt="Special Moment 1">
+      <img src="new/pong.jpg">
 
-      <p>
-
-        Anh thật lòng xin lỗi và quỳ lạy dưới chân Pông vì một lỗi ngớ ngẩn lặp đi lặp lại suốt nhiều lần. Bản thân anh cũng
+      <p>Anh thật lòng xin lỗi và quỳ lạy dưới chân Pông vì một lỗi ngớ ngẩn lặp đi lặp lại suốt nhiều lần. Bản thân anh cũng
         không biết vì lí do gì, ở đây anh chỉ muốn cảm ơn Pông vì vẫn cho anh cơ hội được sửa sai. Anh không dám hứa tương lai
         không ngủ quên nữa, chỉ mong Pông vẫn sẽ bao dung cho thói quen xấu không thể bỏ này. Em biết không, mỗi lần em dỗi anh
         , anh đều rất vui vẻ háo hức để tìm kiếm cơ hội dỗ dành Pông. Nhưng có lẽ 3 ngày liên tiếp không phải thời gian ngắn 
@@ -71,16 +68,19 @@
 
         ...</p>
     </div>
-    
+   
+    <!-- Add more moments as needed -->
   </section>
 
   <section id="apology-section" class="section">
     <h2>Gợi ý chúng ta nên làm gì</h2>
 
     <p>Em yêu thân mến</p>
-    <p>Để không còn tình trạng khó chịu giữa 2 chúng ta, anh đề nghị tuần này chúng ta hãy gặp nhau đi chơi và ôm hôn trao nhau nụ nồng sayyyyy </p>
+    <p>Để không còn tình trạng khó chịu giữa 2 chúng ta, anh đề nghị tuần này chúng ta hãy gặp nhau đi chơi và ôm hôn trao nhau nụ nồng sayyyyy</p>
 
     <p>Cuối tuần này mình đi trượt băng điiiii, đi ôm nhau điiiiiiii</p>
+
+ 
 
 
     <div id="heart-container" style="text-align: center;">
@@ -96,9 +96,27 @@
       Bấm vào đây để cho trái tim tan vỡ lành lại</button>
   </section>
 
- 
+  <section id="letter-section" class="section">
+    <h2 id="letter-title">Anh yêu em nhiều nhiều</h2>
+    <h3>Anh đang quá là đau khổ</h3>
+  
 
- 
+
+
+    <p>Pông ơi anh yêu em anh ghéc emmmm</p>
+
+    <p>Làm ơn Pông ơi là Pông, Pông tha lỗi cho anh đi không là đêm nay anh mất ngủ đau đầu khó thở, phải năn nỉ em thêm lần nữa làm ơnnnnn, quỳ xin em đấyyyyyy</p>
+
+  </section>
+
+  <div>
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="new/Kabhi-Na-Kabhi-To-Miloge(PaglaSongs).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <button id="audio-controls" onclick="toggleAudio()">Click Here</button>
+  </div>
 
   <div id="video-container" style="display: none;">
     <video id="myVideo" width="1500" height="800" controls>
