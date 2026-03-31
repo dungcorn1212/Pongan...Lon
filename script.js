@@ -177,10 +177,14 @@ function hideAllSections() {
     }
   }
   
-  function showVideo() {
-    hideAllSections();
-    videoContainer.style.display = "block";
-  }
+  #function showVideo() {
+    #hideAllSections();
+   #videoContainer.style.display = "block";
+  #}
+function showVideo() {
+  hideAllSections();
+  document.getElementById("video-container").style.display = "block";
+}
   
   function hideAllSections() {
     var sections = document.querySelectorAll('.section');
